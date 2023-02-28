@@ -1,0 +1,190 @@
+/*Variáveis reutilizadas*/
+:root {
+    --main-font: 'Ubuntu';
+    --head-font: 'Inter';
+    --sec-font: 'Tilt Warp';
+    --back-color: #00030C;
+    --main-white: #FFFFFF;
+    --sec-grey: #C0C0C0;
+    --link-color: #8d467c;
+    --head-color: #ac739f;
+    --blue-button: #167BF7;
+    --efc-button: #115bb6;
+    --clk-button: #0d3569;
+}
+/*---------------------------------*/
+
+/*Formatação geral*/
+* {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-weight: 300;
+    text-decoration-line: none;
+    list-style: none;
+    align-items: center;
+}
+
+body {
+    color: var(--main-white);
+    background-color: var(--back-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+p {
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--head-color);
+}
+/*---------------------------------*/
+
+/*Cabeçalho*/
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cab__nome {
+    width: 400px;
+    font-size: 30px;
+}
+
+.cab__menu {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*---------------------------------*/
+
+/*Primeira seção*/
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: var(--head-font);
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+ul, li {
+    padding: 0;
+}
+
+.apresentacao__texto {
+    font-size: 18px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+}
+/*---------------------------------*/
+
+/*Sobre mim*/
+.sobre--mim {
+    padding-top: 80px;
+}
+
+.sobre--mim__texto {
+    font-size: 15px;
+}
+/*---------------------------------*/
+
+/*Skills*/
+.skills {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.skills__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.skills__name {
+    padding-top: 10px;
+}
+
+/*---------------------------------*/
+
+/*Form de contato*/
+.contato {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cont__texto, .cont__titulo {
+    text-align: center;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.form--email {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form label {
+    margin-bottom: 4px;
+}
+
+form input, textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.form__button {
+    margin-bottom: 1em;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    color: #202020;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--blue-button);
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+.form__button:hover {
+    background-color: var(--efc-button);
+    color: black;
+}
+
+.form__button:active {
+    background-color: var(--clk-button);
+    color: black;
+}
+/*---------------------------------*/
+
+/*Rodapé*/
+footer {
+    text-align: center;
+    margin: 3em
+}
+/*---------------------------------*/

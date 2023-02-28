@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Tilt+Warp&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Giuliano Vieira - Portifólio</title>
+
+</head>
+
+<body>
+    <section class="cabecalho">
+        <header class="cab__nome">
+            <p>💻 Giuliano Vieira</p>
+        </header>
+
+        <nav>
+            <ul class="cab__menu">
+                <li class="cab__texto"> <a href="#sobre--mim">SOBRE MIM</a> </li>
+                <li class="cab__texto"> <a href="#projetos">PROJETOS</a> </li>
+                <li class="cab__texto"> <a href="#skills">SKILLS</a> </li>
+                <li class="cab__texto"> <a href="#contato">CONTATO</a> </li>
+            </ul>
+        </nav>
+    </section>
+
+    <main class="conteiner">
+        <section class="apresentacao">
+            <h1>Olá, meu nome é Giuliano Vieira e sou programador.</h1>
+            <p class="apresentacao__texto">Colocar uma bio curta falando dos meus cursos e faculdade</p>
+            <ul class="contatos">
+                <li> <a href="https://github.com/GiulianoMV" target="_blank">GitHub</a> </li>
+                <li> <a href="https://www.linkedin.com/in/giuliano-vieira/" target="_blank">LinkedIn</a> </li>
+            </ul>
+        </section>
+
+        <section class="sobre--mim" id="sobre--mim">
+            <h2>SOBRE MIM</h2>
+            <p class="sobre--mim__texto">Fazer um "sobre mim" falando quando comecei a me interessar na área,
+                quais meus hobbies, o que pretendo para o futuro, e o que espero conseguir na área.
+            </p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>SKILLS</h2>
+            <div class="skills__row">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-html.png" width="70px"></li>
+                        <li class="skills__name">HTML 5</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-css.png" width="70px"></li>
+                        <li class="skills__name">CSS</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-js.png" width="70px"></li>
+                        <li class="skills__name">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-mysql.png" width="70px"></li>
+                        <li class="skills__name">MySQL</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-nodejs.png" width="70px"></li>
+                        <li class="skills__name">NodeJS</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="./assets/img/icon-php.png" width="70px"></li>
+                        <li class="skills__name">PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2 class="cont__titulo">CONTATO</h2>
+            <p class="cont__texto">
+                Entre em contato comigo por e-mail! <br>
+                Responderei o mais rápido possível.
+            </p>
+            <form class="form--email" action="" method="POST">
+                <label>Nome: </label>
+                <input type="text" name="name" id="nome" placeholder="Digite o seu nome" required>
+                <label>E-mail: </label>
+                <input type="text" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                <label>Assunto: </label>
+                <input type="text" name="subject" id="assunto" placeholder="Assunto" required>
+                <label>Mensagem: </label>
+                <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button class="form__button" type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+        <footer>
+            <div>
+                <p>©Desenvolvido por Giuliano Vieira - 2023 <br>
+                    E-mail: gmossv603@gmail.com | Whatsapp: (34) 9 9111-6156
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
